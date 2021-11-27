@@ -52,4 +52,4 @@ jobs:
       
       - name: 'Deploy Into Object Storage'
         run: |
-          oci os object bulk-upload -bn ${{secrets.OCI_BUCKET}} --src-dir --content-type text/php --include *.php --overwrite
+          oci os object bulk-upload -bn ${{secrets.OCI_BUCKET}} --src-dir --content-type php --include *.php --overwrite
